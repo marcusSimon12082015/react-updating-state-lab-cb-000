@@ -17,11 +17,11 @@ export default class YouTubeDebugger extends React.Component{
   }
 
   bitHandler = () => {
-    this.setState({timesClicked:timesClicked + 1})
+    this.setState({settings:{...this.state.settings,bitrate:12}});
   }
 
   resolutionHandler = () => {
-    this.setState({timesClicked:timesClicked + 1})
+    this.setState({settings:{...this.state.settings.video,resolution:'720p'}});
   }
 
   render(){
