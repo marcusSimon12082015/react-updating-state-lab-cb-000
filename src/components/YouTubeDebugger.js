@@ -16,10 +16,16 @@ export default class YouTubeDebugger extends React.Component{
     }
   }
 
-  clickHandler = () => {
+  bitHandler = () => {
     this.setState({timesClicked:timesClicked + 1})
   }
+
+  resolutionHandler = () => {
+    this.setState({timesClicked:timesClicked + 1})
+  }
+
   render(){
-    return(<button className='bitrate' onClick={this.clickHandler}></button>)
+    return(<button className='bitrate' onClick={this.bitHandler}></button><br>
+          <button className='bitrate' onClick={this.resolutionHandler}></button>)
   }
 }
